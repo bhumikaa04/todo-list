@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List - Your Compatible Partner</title>
+    <link rel="stylesheet" href="todo.css" />
+    <link rel="icon" href="main-image.jpeg" />
+</head>
+<body>
+    <div class="title-bar">
+        <div class="home title-content" onclick="showPage('page1')">Home</div>
+        <div class="List1 title-content" onclick="showPage('page2')">List 1</div>
+    </div>
+
+    <div class="container page" id="page1">
+        <div class="todo-app" >
+            <h1>Welcome to your 
+                <br> help-to-achieve-your-goals
+                <br> partner</h1>
+            <br>
+            <h4>Here you can create your custom to-do lists </h4>
+        </div>
+    </div>
+
+    <div class="container page" id="page2">
+        <div class="todo-app">
+            <h2>To-Do List <img src="main-image.jpeg" , alt="image"></h2>
+            <div class="row">
+                <input type="text" id="inputbox" placeholder="Add your task.">
+                <button onclick="addTask()">Add</button>
+            </div>
+            <ul id="list-container"></ul>
+        </div>
+    </div>
+    <script src="todo.js" ></script>
+</body>
+</html>
